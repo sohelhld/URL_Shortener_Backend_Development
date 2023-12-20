@@ -32,19 +32,21 @@ Request Body:
             "password": "your_password"
             }
 
+
+
     # ****ONLY AFTER USER SIGNUP AND LOGIN THEN BLOW ENDPOINT IS ACCESSIBLE****
 URL #Shorten
 Endpoint:**POST /shorten**
-Description: Generate a shortened URL for an authenticated user.
+Description: Generate a shortened URL after authenticated user.
 Request Body:
 
             {
-            "url": "https://www.example.com/your-long-url"
+            "url": "https://www.example.com"
             }
 Response Body:
 
             {
-            "originalURL": "https://www.example.com/your-long-url",
+            "originalURL": "https://www.example.com",
             "shortURL": "http://localhost:8080/abcd1234"
             }
 
